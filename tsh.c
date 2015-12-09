@@ -295,7 +295,7 @@ int builtin_cmd(char **argv)
         sigchld_handler(1);
         exit(1);
     }
-    //if the command is 'jobs', list the jobs and return success\
+    //if the command is 'jobs', list the jobs and return success
     else if (strcmp(argv[0], "jobs") == 0) {
         listjobs(jobs);
         return 1;
